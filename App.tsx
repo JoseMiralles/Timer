@@ -19,7 +19,7 @@ const App = () => {
     <View style={mainStyleSheet.mainView}>
       <ScrollView style={styles.scrollView}>
         { timers ? timers.map((t, i) => (
-          <TimerMenuItem seconds={t.seconds} name={t.name} key={i} />
+          <TimerMenuItem initialSeconds={t.seconds} name={t.name} key={i} />
         ))
       : <Text>Loading...</Text> }
       </ScrollView>
